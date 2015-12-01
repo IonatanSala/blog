@@ -1,7 +1,6 @@
 <div class="container-fluid">
-	<h2 align="center"><%= @article.title %> </h2>
 	<div class="well col-xs-8 col-xs-offset-2">
-		<h3 align="center"><strong>Description</strong></h3>
+		<h3 align="center"><strong><%= @article.title %> </strong></h3>
 		<hr>
 		<%= simple_format(@article.description) %>
 		<div class="article-actions">
