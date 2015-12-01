@@ -1,0 +1,105 @@
+/*
+	NAVBAR STYLING
+*/
+
+nav.navbar.navbar-inverse {
+	border-radius: 0;
+	border: 0;
+	background-color: $navbar-back;
+	margin: 0;
+
+	a.navbar-brand {
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	li {
+		font-weight: bold;
+		color: $grey;
+		font-size: 1.1em;
+	}
+
+	li.active > a {
+		background-color: inherit;
+		color: $grey;
+		&:hover {
+			background-color: inherit;
+			color: $white;
+		}
+	}
+
+	li a {
+		color: $grey;
+		&:hover {
+			background-color: inherit;
+			color: $white;
+		}
+	}
+
+	#sign-up {
+		color: $white;
+		border-radius: 5px;
+		padding-top: 5px;
+		margin-top: 10px;
+		padding-bottom: 7px;
+		background-color: $green;
+
+		&:hover {
+			color: $white;
+			background-color: $green + 10;
+		}
+	}
+}
+
+
+/* above ipad size  */
+@media (min-width: 768px) {
+	nav.navbar {
+		min-height: 70px;
+
+		div.container-fluid {
+			margin-top: 10px;
+			padding-right: 50px;
+
+			a.navbar-brand {
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+/* under ipad size */
+@media (max-width: 767px) {
+	div.navbar-header {
+		.navbar-toggle {
+			padding: 10px 10px;
+			border: 0;
+
+			&:hover > .icon-bar {
+				background-color: $green;
+			}
+			&:hover {
+				background-color: inherit;
+			}
+
+			.icon-bar {
+				height: 3px;
+				width: 25px;
+			}
+		}
+	}
+
+	nav.navbar {
+		.navbar-nav {
+			margin: 0 -15px;
+
+			li {
+				margin-bottom: 7.5px;
+			}
+		}
+	}
+
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+		border: 0;
+	}
+}

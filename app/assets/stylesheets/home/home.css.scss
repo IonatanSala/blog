@@ -1,0 +1,14 @@
+div.center {
+	margin: 0;
+	padding: 100px 0 300px 0;
+	text-align: center;
+	background:  asset-url('home-bg.svg') center center;
+	background-size: cover;
+	color: $white;
+	background-repeat: no-repeat;
+
+	svg {
+		color: red;
+		fill: currentColor;
+	}
+}
