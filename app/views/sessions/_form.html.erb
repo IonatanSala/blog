@@ -1,0 +1,29 @@
+<div class="container-fluid">
+		<%= form_for(:session, :html => {class: "form-horizontal", role: "form" }, url: login_path) do |f| %>
+			<div class="form-group">
+				<div class="control-label col-md-1 col-md-offset-1">
+					<%= f.label :email %><br>
+				</div>
+				<div class="col-md-10">
+					<%= f.email_field :email, class: "form-control", placeholder: "Enter email", autofocus: true%>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="control-label col-md-1 col-md-offset-1">
+					<%= f.label :password %><br>
+				</div>
+				<div class="col-md-10">
+					<%= f.password_field :password, class: "form-control", placeholder: "Enter password", autocomplete: "off" %>
+				</div>
+			</div>
+
+			<div class="form-group">
+		    <div class="col-md-offset-2 col-md-10">
+		      <%= f.submit "Log in", class: "btn btn-lg btn-primary" %>
+		    </div>
+		  </div>
+
+		<%= link_to "Back To Articles", articles_path %>
+		<% end %>
+	</div>

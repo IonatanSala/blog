@@ -50,6 +50,20 @@ nav.navbar.navbar-inverse {
 			background-color: $green + 10;
 		}
 	}
+
+	#log-out {
+		color: $white;
+		border-radius: 5px;
+		padding-top: 5px;
+		margin-top: 10px;
+		padding-bottom: 7px;
+		background-color: $red;
+
+		&:hover {
+			color: $white;
+			background-color: $red + 10;
+		}
+	}
 }
 
 
