@@ -1,21 +1,2 @@
 <h1 align="center">Create new Category</h1>
-<div class="container-fluid">
-	<%= render 'shared/errors', obj: @category %>
-		<%= form_for(@category, :html => {class: "form-horizontal", role: "form" }) do |f| %>
-			<div class="form-group">
-				<div class="control-label col-md-1 col-md-offset-1">
-					<%= f.label :name %><br>
-				</div>
-				<div class="col-md-10">
-					<%= f.text_field :name, class: "form-control", placeholder: "Category name", autofocus: true %>
-				</div>
-			</div>
-
-			<div class="form-group">
-		    <div class="col-md-offset-2 col-md-10">
-		      <%= f.submit("Create category", class: "btn btn-lg btn-primary") %>
-		    </div>
-		  </div>
-		<% end %>
-	</div>
-</div>
+<%= render 'form' %>
